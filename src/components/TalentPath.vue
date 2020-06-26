@@ -59,9 +59,18 @@ export default {
 .talent-path {
   display: flex;
 
+  @media (max-width: 950px) {
+    flex-direction: column;
+  }
+
   .rune-container {
     display: flex;
     justify-items: center;
+    align-items: center;
+
+    @media (max-width: 950px) {
+      flex-direction: column;
+    }
   }
 }
 </style>

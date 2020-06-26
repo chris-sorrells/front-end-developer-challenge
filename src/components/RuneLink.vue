@@ -25,6 +25,15 @@ export default {
   margin-top: auto;
   margin-bottom: auto;
 
+  @media (max-width: 950px) {
+    height: 50px;
+    width: 15px;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
   &.active {
     background: rgba(128, 128, 128, 0.5);
     border-top: 1px solid rgba(255, 255, 255, 0.5);

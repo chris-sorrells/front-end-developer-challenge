@@ -26,6 +26,12 @@ export default {
   border: 1px solid rgba(255, 255, 255, 0.15);
   background: rgba(0, 0, 0, 0.6);
 
+  @media (max-width: 950px) {
+    order: -1;
+    flex: 1 0 85%;
+    margin-bottom: 25px;
+  }
+
   .label {
     color: rgb(100, 150, 200);
   }
