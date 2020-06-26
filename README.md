@@ -3,6 +3,11 @@ This repo contains the results of [the coding challenge](https://github.com/DnDB
 
 I built this with the goal of trying to demonstrate competencies with the JavaScript language, a modern stateful JavaScript framework, state management, unit testing, documentation, and design.  **If you feel that any competency should be expanded on (e.g. E2E testing, SPA routing, etc), please let me know and I can add it.**
 
+## Demo site
+You can quickly test the demo application by using the following link:
+
+https://friendly-lamarr-693562.netlify.app/
+
 ## Screenshots
 
 ### Desktop view
