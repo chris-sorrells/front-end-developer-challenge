@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`HelloWorld.vue renders 1`] = `
-<a>
-  todo rune
-</a>
-`;

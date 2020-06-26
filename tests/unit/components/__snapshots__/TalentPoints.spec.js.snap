@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TalentPoints.vue renders 1`] = `
+<div
+  class="talent-points"
+>
+  <div>
+    <span
+      class="used"
+    >
+      3
+    </span>
+     / 
+    
+    <span
+      class="allowed"
+    >
+      6
+    </span>
+  </div>
+   
+  <div
+    class="label"
+  >
+    Points Spent
+  </div>
+</div>
+`;

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rune.vue renders 1`] = `
+<div
+  class="rune-wrapper"
+>
+  <a
+    class="rune is-box"
+  />
+</div>
+`;

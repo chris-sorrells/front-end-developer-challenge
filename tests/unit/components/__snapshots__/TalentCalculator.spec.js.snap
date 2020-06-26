@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TalentCalculator.vue renders 1`] = `
+<div
+  class="talent-calculator"
+>
+  <talent-calculator-header-stub>
+    
+    TitanStar Legends - Rune Mastery Loadout Talent Calculator 9000
+  
+  </talent-calculator-header-stub>
+   
+  <div
+    class="talent-tree-wrapper"
+  >
+    <div
+      class="talent-tree-container"
+    >
+      <div
+        class="talent-tree"
+      >
+        <div
+          class="title"
+        >
+          Talent Path 1
+        </div>
+         
+        <talent-path-stub
+          runes="[object Object],[object Object]"
+        />
+      </div>
+       
+      <div
+        class="talent-tree"
+      >
+        <div
+          class="title"
+        >
+          Talent Path 2
+        </div>
+         
+        <talent-path-stub
+          runes="[object Object],[object Object]"
+        />
+      </div>
+    </div>
+     
+    <talent-points-stub />
+  </div>
+</div>
+`;

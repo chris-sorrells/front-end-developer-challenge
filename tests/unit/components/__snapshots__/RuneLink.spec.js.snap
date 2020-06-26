@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RuneLink.vue renders when active 1`] = `
+<div
+  class="rune-link active"
+>
+   
+</div>
+`;
+
+exports[`RuneLink.vue renders when not active 1`] = `
+<div
+  class="rune-link"
+>
+   
+</div>
+`;

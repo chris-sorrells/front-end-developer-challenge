@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TalentPath.vue renders 1`] = `
+<div
+  class="talent-path"
+>
+  <div
+    class="rune-container"
+  >
+    <rune-stub
+      active="true"
+      type="box"
+    />
+     
+    <rune-link-stub
+      active="true"
+    />
+  </div>
+  <div
+    class="rune-container"
+  >
+    <rune-stub
+      type="skull"
+    />
+     
+    <!---->
+  </div>
+</div>
+`;
