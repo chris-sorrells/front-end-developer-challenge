@@ -42,6 +42,8 @@ export default {
   methods: {
     activate(id) {
       return this.$store.dispatch("activate", id).catch(error => {
+        // Future improvements: you could launch a modal or a
+        // notification to let the user know they can't do something.
         debug("Failed to activate rune.", error);
       });
     },
