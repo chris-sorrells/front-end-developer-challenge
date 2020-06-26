@@ -18,8 +18,8 @@ https://friendly-lamarr-693562.netlify.app/
 
 ## Features
 ### Business rules
-- Left click to add points.
-- Right click to remove points.
+- Left click (touch for mobile) to add points.
+- Right click (touch and hold for mobile) to remove points.
 - The user may only use up to 6 points.
 - Each item only accounts for one point.
 - Displays current point total"
@@ -33,7 +33,7 @@ https://friendly-lamarr-693562.netlify.app/
 - The application has example unit tests for most major functions.
 
 ## Future enhancements
-- The business rule to use "left click" and "right click" conflicts with mobile device functionality, which only has touch.
+- The business rule to use "left click" and "right click" conflicts with mobile device functionality, which only has touch and touch+hold.  I assumed right click means touch+hold on mobile for the purposes of this challenge.
 - Data is managed through a centralized store for two primary extensibility reasons:
   - It is expected that this application should support fetching data through API calls.  The store is currently structured to make that transition easy (e.g. using `then()` in the store on Promises returned by `fetch` in an `api.js`).
   - It is also expected that this application should support notifications informing the user in the event of an error (e.g. "You have no more action points").  Again, this is made easy by chaining the Promise from the API functions, through the store, up to the UI concerns on the components.
