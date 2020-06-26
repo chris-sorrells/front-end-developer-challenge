@@ -1,14 +1,16 @@
 <template>
   <div id="app">
-    TODO!
+    <rune-container />
   </div>
 </template>
 
 <script>
+import RuneContainer from "@/components/RuneContainer.vue";
+
 export default {
   name: "App",
   components: {
-    //
+    RuneContainer
   }
 };
 </script>
