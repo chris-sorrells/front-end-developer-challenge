@@ -1,39 +1,22 @@
 <template>
-  <div class="rune-container">
-    <div class="rune-row">
+  <div class="talent-path">
+    <div v-for="(rune, index) in runes" :key="rune.id" class="rune-container">
       <rune
-        v-for="rune in runes[0]"
-        :key="rune.id"
         :type="rune.type"
         :active="rune.active"
         :toggleable="!runeByIdCanBeToggled(rune.id)"
         @activate="activate(rune.id)"
         @deactivate="deactivate(rune.id)"
       />
-    </div>
-    <div class="rune-row">
-      <rune
-        v-for="rune in runes[1]"
-        :key="rune.id"
-        :type="rune.type"
-        :active="rune.active"
-        :toggleable="!runeByIdCanBeToggled(rune.id)"
-        @activate="activate(rune.id)"
-        @deactivate="deactivate(rune.id)"
-      />
-    </div>
 
-    <div>
-      points spent:
-      <span v-text="pointsUsed" />
-      /
-      <span v-text="pointsAllowed" />
+      <rune-link v-if="runes.length > index + 1" :active="rune.active" />
     </div>
   </div>
 </template>
 
 <script>
 import Rune from "@/components/Rune.vue";
+import RuneLink from "@/components/RuneLink.vue";
 import Debug from "debug";
 import { mapGetters } from "vuex";
 
@@ -41,16 +24,19 @@ const debug = Debug("front-end-developer-challenge:RuneContainer.vue");
 
 export default {
   components: {
-    Rune
+    Rune,
+    RuneLink
+  },
+
+  props: {
+    runes: {
+      type: Array,
+      required: true
+    }
   },
 
   computed: {
-    ...mapGetters([
-      "runes",
-      "pointsUsed",
-      "pointsAllowed",
-      "runeByIdCanBeToggled"
-    ])
+    ...mapGetters(["runeByIdCanBeToggled"])
   },
 
   methods: {
@@ -70,9 +56,12 @@ export default {
 </script>
 
 <style lang="scss">
-.rune-container {
-  .rune-row {
+.talent-path {
+  display: flex;
+
+  .rune-container {
     display: flex;
+    justify-items: center;
   }
 }
 </style>
