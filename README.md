@@ -10,7 +10,7 @@ https://friendly-lamarr-693562.netlify.app/
 
 ## Screenshots
 
-### Desktop view
+### Desktop view (PWA mode)
 ![Desktop view](desktop.jpg)
 
 ### Mobile view
