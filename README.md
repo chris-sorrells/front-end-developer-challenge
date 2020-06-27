@@ -55,7 +55,7 @@ npm run serve
 ### Activate debug messages
 In a browser console, type the following:
 ```javascript
-localStorage.debug = "*,-sockjs-client:*"
+localStorage.debug = "*, -sockjs-client:*"
 ```
 This application uses the [debug](https://www.npmjs.com/package/debug) package to display its logs.  More configuration information can be found on their main page.
 
